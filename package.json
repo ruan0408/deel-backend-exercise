@@ -10,16 +10,21 @@
   },
   "scripts": {
     "start": "nodemon ./src/server.js",
-    "seed": "node ./scripts/seedDb.js"
+    "seed": "node ./scripts/seedDb.js",
+    "test": "mocha './test/**/*.spec.js'"
   },
   "devDependencies": {
+    "chai": "^4.3.7",
     "concurrently": "4.1.0",
     "eslint": "^8.28.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-promise": "^6.1.1",
-    "nodemon": "1.19.1"
+    "mocha": "^10.1.0",
+    "nodemon": "1.19.1",
+    "supertest": "^6.3.1"
   },
   "engines": {
     "node": ">=10.16.3"

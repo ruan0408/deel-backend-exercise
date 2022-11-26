@@ -1,15 +1,20 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es2021": true
-    },
-    "extends": "standard",
-    "overrides": [
+    "plugins": [
+        "mocha"
     ],
+    "env": {
+        "browser": false,
+        "commonjs": true,
+        "es2021": true,
+        "mocha": true
+    },
+    "extends": ["eslint:recommended", "plugin:mocha/recommended"],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
     "rules": {
-    }
+        "mocha/no-mocha-arrows": "off"
+    },
+    "overrides": [
+    ]
 }
